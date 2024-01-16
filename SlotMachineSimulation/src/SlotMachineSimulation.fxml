@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="365.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SlotMachineSimulationController">
+   <children>
+      <HBox layoutX="20.0" layoutY="10.0" prefHeight="188.0" prefWidth="539.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="image1" fitHeight="167.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Say%20Chaleon%20Vang/Desktop/Java2/HW9/Cherries.png" />
+               </image></ImageView>
+            <ImageView fx:id="image2" fitHeight="166.0" fitWidth="186.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Say%20Chaleon%20Vang/Desktop/Java2/HW9/Cherries.png" />
+               </image></ImageView>
+            <ImageView fx:id="image3" fitHeight="168.0" fitWidth="194.0" layoutX="152.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Say%20Chaleon%20Vang/Desktop/Java2/HW9/Cherries.png" />
+               </image></ImageView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="spinButton" layoutX="245.0" layoutY="305.0" mnemonicParsing="false" onAction="#spinBtnlistener" pickOnBounds="false" prefHeight="42.0" prefWidth="96.0" text="Spin">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <HBox layoutX="31.0" layoutY="191.0" prefHeight="100.0" prefWidth="255.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="109.0" text="Amount Inserted: $">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textField" prefHeight="31.0" prefWidth="106.0" promptText="Enter Amount">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </HBox>
+      <VBox layoutX="290.0" layoutY="195.0" prefHeight="100.0" prefWidth="262.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="262.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="246.0" text="Amount Won This Spin: $" textAlignment="RIGHT">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="spinAmount" layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="97.0" text="0.0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="286.0">
+               <children>
+                  <Label text="Total Amount Won: $" textAlignment="RIGHT">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalAmount" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="57.0" text="0.0">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </opaqueInsets>
+</AnchorPane>
